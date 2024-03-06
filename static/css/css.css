@@ -11,7 +11,7 @@ body {
 }
 
 .btn1 {
-  color: antiquewhite;
+  color: rgb(34, 2, 48);
   outline: none;
   background-color: Transparent;
   border: none;
@@ -138,8 +138,8 @@ fieldset {
   padding-bottom: 40px;
 }
 #headtxt {
-  font-size: 80px;
-  color: bisque;
+  font-size: 50px;
+  color: rgb(255, 208, 0);
 }
 @media only screen and (max-width: 600px) {
   #txt {

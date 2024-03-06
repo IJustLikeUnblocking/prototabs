@@ -16,11 +16,27 @@
         -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>New Hypertab</title>
+		<title>Ohio</title>
 		<link rel="stylesheet" href="/css/css.css" />
 	</head>
 
 	<body id="body">
+		<<img src="image.png" alt="Bouncing Image" 
+		style="position: fixed; bottom: -1%; left: -1%; width: 20%; height: auto; 
+			   transform: scale(1); transition: transform 0.3s ease;" 
+		onmouseover="this.style.transform='scale(1.1)'" 
+		onmouseout="this.style.transform='scale(1)'">
+   
+   <style>
+	 @keyframes bounce {
+	   from { transform: translateY(0); }
+	   to { transform: translateY(-15%); } 
+	 }
+   
+	 img {
+	   animation: bounce 0.5s infinite alternate; 
+	 }
+   </style>
 		<script src="/js/xor.js"></script>
 		<script src="/js/bookmarks.js"></script>
 		<script src="/uv/uv.bundle.js"></script>
@@ -39,13 +55,13 @@
 		</div>
 
 		<div class="center">
-			<h1 id="headtxt">Hypertabs</h1>
+			<h1 id="headtxt">school approved unblocker site! (totally)</h1>
 			<forum
 				id="input"
 				onkeydown="if(event.key == 'Enter'){location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`}"
 				onsubmit="location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`"
 			>
-				<input id="inputb" placeholder="Search....." />
+				<input id="inputb" placeholder="mysdpbc.org legit" />
 				<input
 					id="inputimg"
 					onclick="location.href=`${__uv$config.prefix}${xor.encode(window.parent.searchEngine+document.getElementById('inputb').value)}`"
@@ -57,27 +73,6 @@
 				/>
 				<input type="submit" style="display: none" />
 			</forum>
-			<div class="btns">
-				<!-- idea: maybe include __uv$config.prefix with xor.encode -->
-				<div
-					onclick="location.href=__uv$config.prefix+xor.encode('https://music.youtube.com')"
-					class="crm"
-				>
-					<img class="icn" src="/bookmark.png" />
-					<a class="btn">Music</a>
-				</div>
-				<div onclick="location.href='/c.html'" class="crm">
-					<img class="icn" src="/icon.png" />
-					<a class="btn">Contributors</a>
-				</div>
-				<div
-					onclick="location.href=__uv$config.prefix+xor.encode('https://discord.gg/J3VPy5Vy8x')"
-					class="crm"
-				>
-					<img class="icn" src="/dcd.png" />
-					<a class="btn">Join Discord</a>
-				</div>
-			</div>
 		</div>
         <!--
   _____                   _                _     _                                                                      
